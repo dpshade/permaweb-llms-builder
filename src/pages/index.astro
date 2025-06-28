@@ -273,14 +273,14 @@ const docsIndex = indexData as DocumentationIndex;
 		</div>
 
 		<!-- Main JavaScript -->
-		<script define:vars={{ docsIndex }}>
-			import { initializeAllTheme } from "../utils/theme.js";
+		<script type="module" define:vars={{ docsIndex }}>
+			import { initializeAllTheme } from "/src/utils/theme.js";
 			import {
 				batchFetchAndClean,
 				generateLLMsTxt,
 				downloadFile,
 				openContentInNewTab,
-			} from "../utils/defuddle-fetch.js";
+			} from "/src/utils/defuddle-fetch.js";
 
 			// Initialize theme system
 			initializeAllTheme();
